@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="shop.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="pandashoplogo3.PNG.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>Webshop - PandaShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="top" class="container-fluid">
+<!-- opening picture -->
+        <header>
+        <div class="row no-margin " >
+            <div id="title-pic" class="col-12 text-center py-0 ">
+                <img class="no-margin" src="shop_0001.png" alt="Man pushing cart in a store aisle" id="shopAnimation">
+                <h1 id="top" class="display-1 display-md-2 display-lg-1 welc">Choose your plant!</h1>
+            </div>
+        </div>
+        </header>
+<!-- menu -->
+        <nav aria-label="Main navigation">
+        <div class="row min-vh-30 text-center py-3 bordered">
+            <div class="col-3 text-center fs-30 fs-md-4 fs-lg-10">
+                <span class = "menu menud fs-3 fs-md-2 fs-lg-1" aria-current="page">SHOP</span>
+            </div>
+            <div class="col-3 text-center">
+                <a class="menu fs-3 fs-md-2 fs-lg-1" href="index.html" title="Go back to home page">HOME</a>
+            </div>
+            <div class="col-3 text-center">
+                <a class = "menu fs-3 fs-md-2 fs-lg-1" href="faq.html" title="See frequently asked questions and ask one yourself">Q&A</a>
+            </div>
+            <div class="col-3 menu fs-3 fs-md-2 fs-lg-1" ><div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-cart3 fs-3 fs-md-2 fs-lg-1 menu" aria-hidden="true" title="Number of items in cart. Please note that checkout is not yet facilitated in the websites demo version. We take orders only via personal contact on the query." alt="Number of items in cart. Please note that checkout is not yet facilitated in the websites demo version, we take orders only via personal contact on the query."></i>
+            <span class="counter-display badge bg-secondary rounded-pill" id="counter" >0</span>
+            </div>
+            </div>
+        </div>
+        </nav>
+
+        <a href="#guide" class="visually-hidden-focusable" style="color:white; font-size: larger;">Skip to choosing guide</a>
+        <main>
+        <section>
+        <div class="row h-50 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-md-6">
+                <img src="lily.jpg" alt="Panda plant" class="thumbnail img-fluid" onclick="openLightbox('lily.jpg')">
+            </div>
+            <div class="col-12 col-md-6 desc"><h2>White Peace Lily</h2><br><strong>$27.07</strong><br> <br> <article>Elegant and timeless, the <b>Peace Lily</b> features delicate white blooms and lush green leaves, bringing a touch of <i>serenity</i> to any space. Perfect for <i>minimalist and modern</i> interiors.</article><br>
+            <button class="cart">Place in cart</button></div>
+        </div>
+        </section>
+
+        <section>
+        <div class="row h-50 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-md-6 order-2 order-md-1 desc"><h2>Dracaena Marginata</h2><br><strong>$61.33</strong><br><br><article> With its striking upright form and vibrant, sword-like leaves, the <b>Dracaena</b> adds a bold yet low-maintenance touch to <i>contemporary and industrial</i> spaces.</article><br>
+            <button class="cart">Place in cart</button>
+        </div>
+            <div class="col-12 col-md-6 order-1 order-md-2">
+                <img class="img-fluid thumbnail" src="dracaena.jpg" alt="Green Dracaena" onclick="openLightbox('dracaena.jpg')">
+            </div>
+        </div>
+        </section>
+
+        <section>
+        <div class="row h-50 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-md-6">
+                <img class="img-fluid thumbnail" src="poinsettia.avif" alt="Red Poinsettia" onclick="openLightbox('poinsettia.avif')">
+            </div>
+            <div class="col-12 col-md-6 desc"><h2>Poinsettia</h2><br><strong>$19.99</strong><br> <br> <article>A holiday favorite, the <b>Poinsettia</b>’s vibrant red foliage creates a festive and cheerful atmosphere, making it a perfect <i>seasonal</i> centerpiece.</article><br>
+            <button class="cart">Place in cart</button>
+        </div>
+        </div>
+        </section>
+
+        <section>
+        <div class="row h-50 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-md-6 order-2 order-md-1 desc"><h2>Olive Tree</h2><br><strong>$128.65</strong><br><br> <article>Mediterranean charm in plant form, the <b>Olive Tree</b>’s silvery-green leaves and graceful branches add an effortless, <i>rustic elegance</i> to any home.</article><br>
+            <button class="cart">Place in cart</button>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2">
+                <img class="img-fluid thumbnail" src="olive.jpg" alt="Small indoors olive tree" onclick="openLightbox('olive.jpg')">
+            </div>
+        </div>
+        </section>
+        </main>
+
+    </div>
+<br>
+<section>
+<h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">We'll help you choose!</h2>
+<br>
+<div id="guide" class="table-responsive">
+<table class="table table-bordered table-hover table-striped">
+    <caption>
+    A table describing a few choices of fitting plants based on interior design
+    </caption>
+    <thead class="head">
+    <tr>
+        <th scope="col">Style of your home</th>
+        <th scope="col">Recommended choices</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Modern minimalist</th>
+            <th>Monstera Deliciosa or ZZ plant</th>
+        </tr>
+
+        <tr>
+            <th>Scandinavian</th>
+            <th>Fiddle leaf fig</th>
+        </tr>
+
+        <tr>
+            <th>Cozy Cottage-core</th>
+            <th>Lavender/Olive tree</th>
+        </tr>
+
+        <tr>
+            <th>Boho Chic</th>
+            <th>Hanging pothos and ferns</th>
+        </tr>
+
+        <tr>
+            <th>Luxury/High-end decor</th>
+            <th>Orchid/Bonsai tree</th>
+        </tr>
+        
+        <tr>
+            <th>Millennial grey</th>
+            <th>Peace Lily</th>
+        </tr>
+    </tbody>    
+</table>
+    <details close class="screen-only">
+        <summary>How to figure the interior design</summary>
+        After figuring out the style of your home (for which, here is a <a href="https://bobbyberk.com/take-this-quiz-to-figure-out-your-interior-design-style/">guide for interior design</a>), simply choose a well-fitting plant to compliment it! Or, invent a new style with an interesting pairing! We are all for the creativity here at PandaShop!
+    </details>
+</div>
+<section class="print-only">How to figure the interior design? After figuring out the style of your home (for which, there is a guide for interior design on bobbyberk.com), simply choose a well-fitting plant to compliment it! Or, invent a new style with an interesting pairing! We are all for the creativity here at PandaShop!
+</section>
+</section>
+<footer>
+    <img id="logo" src="pandashoplogo3.PNG.png" title="Official PandaShop Logo" alt="Logo of PandaShop">
+      <hr>
+      <a class="link-top" href="#top">Back to the top</a>
+</footer>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Item added to cart!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let frameIndex = 1;
+      const totalFrames = 18; // Adjust based on your PNG sequence
+      const imgElement = document.getElementById("shopAnimation");
+
+      function playAnimation() {
+          if (frameIndex <= totalFrames) {
+              imgElement.src = `shop_${String(frameIndex).padStart(4, '0')}.png`; 
+              frameIndex++;
+              setTimeout(playAnimation, 1000 / 8); // 8 FPS animation
+          }
+      }
+      
+      window.onload = playAnimation;
+
+
+      const counterDisplay = document.getElementById('counter');
+const buttons = document.querySelectorAll('.cart');  // ✅ fixed
+let counter = localStorage.getItem('persistentCounter');
+counter = counter ? parseInt(counter) : 0;
+counterDisplay.textContent = counter;
+
+// ✅ Initialize toast AFTER it's in the DOM
+const cartToastElement = document.getElementById('cartToast');
+const cartToast = new bootstrap.Toast(cartToastElement);
+
+function incrementCounter() {
+    counter++;
+    counterDisplay.textContent = counter;
+    localStorage.setItem('persistentCounter', counter);
+    cartToast.show();  // ✅ show toast
+}
+
+buttons.forEach(button => {
+    button.addEventListener('click', incrementCounter);
+});
+
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    lightboxImg.src = imageSrc;
+    lightbox.style.display = "flex";
+    document.body.style.overflow = 'hidden'; // Disable background scroll
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    lightbox.style.display = "none";
+    document.body.style.overflow = ''; // Re-enable scroll
+}
+
+
+  </script>
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded image">
+    <span class="close" onclick="closeLightbox(); event.stopPropagation();">&times;</span>
+</div>
+</body>
+</html>
